@@ -31,9 +31,9 @@ From within the root directory:
 
 ## Available API Routes
 
-| Endpoint                              | Type   | Operation                 |
-|---------------------------------------|--------|---------------------------|
-| `'/api/restaurants/:id/googlereviews'`| GET    | Get all reviews           |
-| `'/api/restaurants/:id/googlereviews'`| POST   | Create a review           |
-| `'/api/restaurants/:id/googlereviews'`| PUT    | Update a review           |
-| `'/api/restaurants/:id/googlereviews'`| DELETE | Remove a review           |
+| Endpoint                            | Type   | Operation           |
+|-------------------------------------|--------|---------------------|
+| `/api/restaurants/:id/googlereviews`| GET    | Get all reviews     |
+| `/api/restaurants/:id/googlereviews`| POST   | Create a review     |
+| `/api/restaurants/:id/googlereviews`| PUT    | Update a review     |
+| `/api/restaurants/:id/googlereviews`| DELETE | Remove a review     |
