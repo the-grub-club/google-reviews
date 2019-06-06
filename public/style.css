@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Calibre-Regular";
+  src: url("http://localhost:3003/fonts/CalibreWeb-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Calibre-Semibold";
+  src: url("http://localhost:3003/fonts/CalibreWeb-Semibold.woff2");
+} */
+
+body {
+  font-family: "Calibre-Regular", sans-serif;
+  font-size: 14px;
+  background-color: rgb(243, 243, 243);
+  margin: 0;
+}
+
+/* .rating {
+  font-size: 48px;
+  color: black;
+  display: inline-block;
+  overflow: hidden;
+}
+.rating::before { 
+  content: "★★★★★" 
+} */
+
+#app {
+  position: sticky;
+  top: 32px;
+  bottom: 32px;
+  display: inline-block;
+}
