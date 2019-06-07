@@ -1,51 +1,10 @@
-[] GET all reviews for one restaurant
+# GET all reviews for one restaurant
 
 URL:
     `/api/restaurants/:id/googlereviews`
 
 Method:
     GET
-
-URL Params:
-    Required:
-        id=[integer]
-
-Data Params:
-    None
-
-Success Response:
-Code: 200
-Content: {
-    reviewer: string,
-    date: string,
-    picture: string (url),
-    review: string,
-    restaurantName: string
-    restaurantId: number
-}
-
-Error Response:
-    Code: 500
-    Content: error
-
-Sample Call:
- $.ajax({
-      type: 'GET',
-      url: `/api/restaurants/${pathId}/googlereviews`,
-      success: (data) => {
-        this.setState({
-          current: data,
-        });
-      },
-    });
-
-[] POST a review for one restaurant
-
-URL:
-    `/api/restaurants/:id/googlereviews`
-
-Method:
-    POST
 
 URL Params:
     Required:
@@ -64,6 +23,39 @@ Success Response:
         restaurantName: string
         restaurantId: number
     }
+
+Error Response:
+    Code: 500
+    Content: error
+
+Sample Call:
+ $.ajax({
+      type: 'GET',
+      url: `/api/restaurants/${pathId}/googlereviews`,
+      success: (data) => {
+        this.setState({
+          current: data,
+        });
+      },
+    });
+
+# POST a review for one restaurant
+
+URL:
+    `/api/restaurants/:id/googlereviews`
+
+Method:
+    POST
+
+URL Params:
+    Required:
+        id=[integer]
+
+Data Params:
+    None
+
+Success Response:
+    Code: 200
 
 Error Response:
     Code: 500
@@ -89,7 +81,7 @@ Sample Call:
     },
     });
 
-[] Update a review for one restaurant
+# Update a review for one restaurant
 
 URL:
     `/api/restaurants/:id/googlereviews`
@@ -106,14 +98,7 @@ Data Params:
 
 Success Response:
     Code: 200
-    Content: {
-        reviewer: string,
-        date: string,
-        picture: string (url),
-        review: string,
-        restaurantName: string
-        restaurantId: number
-    }
+
 
 Error Response:
     Code: 500
@@ -139,7 +124,7 @@ Sample Call:
     },
     });
 
-[] Delete a review for one restaurant
+# Delete a review for one restaurant
 
 URL:
     `/api/restaurants/:id/googlereviews`
