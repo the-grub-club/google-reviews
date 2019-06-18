@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "webpack -d --watch",
-    "start": "nodemon server/app.js",
+    "start": "nodemon server/index.js",
     "seed": "node db/randomDataFuncs.js",
     "test": "jest"
   },
@@ -53,10 +53,13 @@
     "faker": "^4.1.0",
     "jquery": "^3.4.1",
     "mysql": "^2.17.1",
+    "newrelic": "^5.9.1",
     "path": "^0.12.7",
+    "pg": "^7.11.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "redis": "^2.8.0",
     "styled-components": "^4.2.0"
   },
   "devDependencies": {

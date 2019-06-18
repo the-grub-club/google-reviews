@@ -84,11 +84,11 @@ class Review extends React.Component {
   render() {
     const {
       review: {
-        reviewer, picture, date_posted, text_review,
+        reviewer, picture_url, date_posted, review_text,
       },
     } = this.props;
 
-    let text = text_review;
+    let text = review_text;
     if (text.length > 200 && !this.state.dropdown) {
       text = (
         <span>
@@ -100,7 +100,7 @@ class Review extends React.Component {
 
     return (
       <ReviewContainer>
-        <Photo src={picture} alt={picture} />
+        <Photo src={picture_url} alt={picture_url} />
         <TextInfo>
           <Reviewer>{reviewer}</Reviewer>
           <Date>{date_posted}</Date>

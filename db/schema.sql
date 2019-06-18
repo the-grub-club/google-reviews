@@ -1,4 +1,5 @@
 /* Execute in the command line:
+FOR postsql DB
 1. Create database: createdb google_reviews
 2. Use psql database: psql google_reviews
 3. Create Table: use code below:
